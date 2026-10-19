@@ -25,7 +25,7 @@ Developer: Dmukhailo Darya
 
 Responsibilities: Requirements analysis, research, UI/UX design, frontend and backend development, database design, AI integration, testing, and documentation.
 
-Supervisor: Rakhym A.M.
+Supervisor: Rakym A.M.
 
 ## 4. Project Scope and Status
 
