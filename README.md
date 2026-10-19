@@ -47,7 +47,7 @@ AI integration: To be determined
 
 ## 6. Project Links
 
-YouTrack: 
+YouTrack: https://library-of-experiences.youtrack.cloud
 
 Project documentation: 
 
