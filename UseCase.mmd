@@ -1,0 +1,25 @@
+flowchart LR
+    V(["Visitor"])
+    ADM(["Administrator"])
+    AI(["AI model API"])
+
+    subgraph P["Library of Experiences"]
+        UC1(["Search the catalogue"])
+        UC2(["Open a condition page"])
+        UC3(["View an interactive visualization"])
+        UC4(["Read personal stories"])
+        UC5(["Find how to help / where to get support"])
+        UC6(["Talk to the AI assistant"])
+        UC7(["Get referred to a specialist"])
+        UC8(["Manage conditions and sources"])
+    end
+
+    V --> UC1
+    V --> UC2
+    V --> UC6
+    UC2 -. "include" .-> UC3
+    UC2 -. "include" .-> UC4
+    UC2 -. "include" .-> UC5
+    UC6 -. "extend: crisis or diagnosis request" .-> UC7
+    UC6 --> AI
+    ADM --> UC8

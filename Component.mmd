@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph FE["Frontend - React"]
+        UI["Pages<br/>Home, Catalogue, Condition"]
+        VIS["Visualizations"]
+        CHAT["AI assistant UI"]
+    end
+
+    subgraph BE["Backend - Node.js + Express (REST API)"]
+        CONTENT["Content module<br/>conditions, stories, sources"]
+        SEARCH["Search module"]
+        ASSIST["Assistant module<br/>finds relevant content,<br/>applies safety rules"]
+    end
+
+    DB[("PostgreSQL")]
+    MEDIA[("Media files<br/>images, audio, video")]
+    LLM[("AI model API")]
+
+    UI --> CONTENT
+    UI --> SEARCH
+    VIS --> CONTENT
+    CHAT --> ASSIST
+    CONTENT --> DB
+    CONTENT --> MEDIA
+    SEARCH --> DB
+    ASSIST --> DB
+    ASSIST --> LLM

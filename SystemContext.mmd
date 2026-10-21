@@ -1,0 +1,15 @@
+flowchart LR
+    V(["Visitor<br/>(interested users, relatives,<br/>people with lived experience)"])
+    A(["Content administrator<br/>(developer)"])
+    S["Library of Experiences<br/>web platform"]
+    LLM[("AI model API<br/>(OpenAI / Gemini)")]
+    SRC[("Sources<br/>ICD-11, WHO,<br/>published personal stories")]
+    HELP[("Support services<br/>helplines, clinics")]
+
+    V -- "browses conditions,<br/>views visualizations,<br/>asks the assistant" --> S
+    S -- "pages, visualizations,<br/>answers with sources" --> V
+    A -- "adds and updates content" --> S
+    SRC -. "used to prepare content" .-> S
+    S -- "question + relevant site content" --> LLM
+    LLM -- "answer" --> S
+    S -- "refers users to" --> HELP
