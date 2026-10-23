@@ -19,7 +19,7 @@ Mental health conditions are often misunderstood, and stigma can negatively affe
 
 #### Expected outcomes:
 
-- An interactive web platform with a catalog of 5-10 mental health conditions based on the ICD-11 classification.
+- An interactive web platform with a catalog of 5+ mental health conditions based on the ICD-11 classification.
 - Condition pages with educational information, interactive visualizations, personal stories, advice on how to help, and sources.
 - An AI-powered assistant that answers questions based on the platform's content and refers crisis or diagnosis requests to specialists.
 - A calm and user-friendly interface that supports mental health awareness.
@@ -36,7 +36,7 @@ Supervisor: Rakym A.M.
 
 Scope: The project includes research of existing solutions, requirements analysis, interface design, web application development, integration of an AI component, and software testing.
 
-In scope: catalog with search, condition pages, at least 3 types of interactive visualizations, personal stories with sources, AI assistant, help and support contacts.
+In scope: catalog with search, condition pages, at least 2 types of interactive visualizations, personal stories with sources, AI assistant, help and support contacts.
 
 Out of scope: diagnosis or therapy, crisis intervention, user accounts, mobile apps.
 
